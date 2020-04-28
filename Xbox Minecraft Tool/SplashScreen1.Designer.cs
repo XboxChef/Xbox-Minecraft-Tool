@@ -45,32 +45,36 @@
             // marqueeProgressBarControl1
             // 
             this.marqueeProgressBarControl1.EditValue = 0;
-            this.marqueeProgressBarControl1.Location = new System.Drawing.Point(34, 231);
+            this.marqueeProgressBarControl1.Location = new System.Drawing.Point(45, 284);
+            this.marqueeProgressBarControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.marqueeProgressBarControl1.Name = "marqueeProgressBarControl1";
-            this.marqueeProgressBarControl1.Size = new System.Drawing.Size(404, 12);
+            this.marqueeProgressBarControl1.Size = new System.Drawing.Size(539, 15);
             this.marqueeProgressBarControl1.TabIndex = 5;
             // 
             // labelControl1
             // 
             this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl1.Location = new System.Drawing.Point(323, 303);
+            this.labelControl1.Location = new System.Drawing.Point(455, 374);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(115, 13);
+            this.labelControl1.Size = new System.Drawing.Size(135, 16);
             this.labelControl1.TabIndex = 6;
-            this.labelControl1.Text = "Copyright © 2019-2020";
+            this.labelControl1.Text = "Copyright © 2019-2030";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(34, 206);
+            this.labelControl2.Location = new System.Drawing.Point(45, 254);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(50, 13);
+            this.labelControl2.Size = new System.Drawing.Size(57, 16);
             this.labelControl2.TabIndex = 7;
             this.labelControl2.Text = "Starting...";
             // 
             // pictureEdit2
             // 
             this.pictureEdit2.EditValue = global::Xbox_Minecraft_Tool.Properties.Resources.Street_Design_3D___Minecraft__;
-            this.pictureEdit2.Location = new System.Drawing.Point(12, 12);
+            this.pictureEdit2.Location = new System.Drawing.Point(16, 15);
+            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.AllowFocused = false;
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -78,13 +82,15 @@
             this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit2.Properties.ShowMenu = false;
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit2.Size = new System.Drawing.Size(426, 180);
+            this.pictureEdit2.Size = new System.Drawing.Size(568, 222);
             this.pictureEdit2.TabIndex = 9;
             // 
             // pictureEdit1
             // 
+            this.pictureEdit1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureEdit1.EditValue = global::Xbox_Minecraft_Tool.Properties.Resources._973489;
-            this.pictureEdit1.Location = new System.Drawing.Point(327, 249);
+            this.pictureEdit1.Location = new System.Drawing.Point(479, 307);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.AllowFocused = false;
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -92,26 +98,28 @@
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowMenu = false;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.pictureEdit1.Size = new System.Drawing.Size(65, 48);
+            this.pictureEdit1.Size = new System.Drawing.Size(87, 59);
             this.pictureEdit1.TabIndex = 8;
             // 
             // labelControl3
             // 
             this.labelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl3.Location = new System.Drawing.Point(416, 206);
+            this.labelControl3.Location = new System.Drawing.Point(555, 254);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(22, 13);
+            this.labelControl3.Size = new System.Drawing.Size(26, 16);
             this.labelControl3.TabIndex = 10;
-            this.labelControl3.Text = "V2.0";
+            this.labelControl3.Text = "V3.0";
             // 
             // labelControl4
             // 
             this.labelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl4.Location = new System.Drawing.Point(58, 267);
+            this.labelControl4.Location = new System.Drawing.Point(105, 330);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(263, 13);
+            this.labelControl4.Size = new System.Drawing.Size(348, 16);
             this.labelControl4.TabIndex = 11;
-            this.labelControl4.Text = "Welcome To Xbox Minecraft Tool  Created By -Serenity";
+            this.labelControl4.Text = "Welcome To Xbox Minecraft Tool  Created By TeddyHammer";
             // 
             // timer1
             // 
@@ -120,9 +128,9 @@
             // 
             // SplashScreen1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 320);
+            this.ClientSize = new System.Drawing.Size(600, 394);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.marqueeProgressBarControl1);
@@ -130,6 +138,7 @@
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.pictureEdit2);
             this.Controls.Add(this.pictureEdit1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SplashScreen1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.SplashScreen1_Load);

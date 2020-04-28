@@ -15,7 +15,7 @@ namespace Xbox_Minecraft_Tool
 {
     public partial class HomePanel : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
-
+        public static IXboxConsole console;
         #region Form Handlers
         int caseSwitch = 1;
         public string DefaultTheme = "Visual Studio 2013 Dark";
@@ -45,9 +45,9 @@ namespace Xbox_Minecraft_Tool
             Tabs.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
             #endregion
         }
-        public void wasClicked()
+        public void TabPageNumber(int X)
         {
-            switch (caseSwitch)
+            switch (X)
             {
                 case 1:
                     wce.Show();
@@ -87,27 +87,23 @@ namespace Xbox_Minecraft_Tool
         #region SlideMenuItems
         private void accordionControlElement3_Click(object sender, EventArgs e)
         {
-            caseSwitch = 4;
-            wasClicked();
+            TabPageNumber(4);
         }
 
         private void accordionControlElement2_Click(object sender, EventArgs e)
         {
-            caseSwitch = 1;
-            wasClicked();
+            TabPageNumber(1);
         }
 
         private void accordionControlElement5_Click(object sender, EventArgs e)
         {
-            caseSwitch = 2;
-            wasClicked();
+            TabPageNumber(2);
 
         }
 
         private void accordionControlElement4_Click(object sender, EventArgs e)
         {
-            caseSwitch = 3;
-            wasClicked();
+            TabPageNumber(3);
 
         }
         #endregion
@@ -118,19 +114,7 @@ namespace Xbox_Minecraft_Tool
         }
         #endregion
         #region Welcome Page
-        public static void X360Text(string a)
-        {
-            if (Xnotify == true)
-            {
-                object[] arguments = new object[] { 0x18, 0xff, 2, (a).ToWCHAR(), 1 };
-                console.CallVoid(JRPC.ThreadType.Title, "xam.xex", 0x290, arguments);
-            }
-            else
-            {
 
-            }
-
-        }
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
@@ -138,7 +122,7 @@ namespace Xbox_Minecraft_Tool
             {
                 if (console.Connect(out console))
                 {
-                    X360Text("Connected! Welcome To Xbox Minecraft Tool " + labelControl29.Text+" Made By Serenity");
+                    XNotify.Show("Connected! Welcome To Xbox Minecraft Tool " + labelControl29.Text+" Made By TeddyHammer");
                     ConnectStatus.ForeColor = Color.Green;
                     ConnectStatus.Text = "Connected!";
                 }
@@ -159,30 +143,34 @@ namespace Xbox_Minecraft_Tool
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-            LaunchXEX(@"\Device\Package_232EEB4B8C0E92B5D507BDF43CA6CE35\default.xex", @"\Device\Package_232EEB4B8C0E92B5D507BDF43CA6CE35");
+            if(ConnectStatus.Text == "Connected!")
+            {
+                LaunchXEX(@"\Device\Package_232EEB4B8C0E92B5D507BDF43CA6CE35\default.xex", @"\Device\Package_232EEB4B8C0E92B5D507BDF43CA6CE35");
+            }
         }
         public void LaunchTitle(string Path,string Directory)
         {
             string[] lines = Path.Split("\\".ToCharArray());
             for (int i = 0; i < lines.Length - 1; i++)
                 Directory += lines[i] + "\\";
-            SendText("magicboot title=\"" + Path + "\" directory=\"" + Directory + "\"");
+            console.SendTextCommand(0,"magicboot title=\"" + Path + "\" directory=\"" + Directory + "\"", out _);
         }
         public void LaunchXEX(string xexPath, string xexDirectory)
         {
             try
             {
-                SendText(string.Format("magicboot title=\"{0}\" directory=\"{1}\"", xexPath, xexDirectory));
+
+                console.SendTextCommand(0, NewMethod(xexPath, xexDirectory), out _);
             }
             catch
             {
                 MessageBox.Show("Unable to launch xex.", "oops :(");
             }
         }
-        private void SendText(string v)
-        {
-            console.SendTextCommand(JRPC.connectionId, v, out Responses);
 
+        private static string NewMethod(string xexPath, string xexDirectory)
+        {
+            return string.Format("magicboot title=\"{0}\" directory=\"{1}\"", xexPath, xexDirectory);
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
@@ -209,7 +197,7 @@ namespace Xbox_Minecraft_Tool
         #region About Page
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Process.Start("https://discord.gg/KtwsM8U");
+            Process.Start("https://discord.gg/CSv8ZQF");//
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -229,11 +217,11 @@ namespace Xbox_Minecraft_Tool
             {
                 if (toggleSwitch1.IsOn)
                 {
-                    superSpeedEdit(0.5f);
+                    GameCheat(0.5f, Cheats.SuperSpeed);
                 }
                 else
                 {
-                    superSpeedEdit(0.91f);
+                    GameCheat(0.91f, Cheats.SuperSpeed);
                 }
             }
         }
@@ -244,11 +232,11 @@ namespace Xbox_Minecraft_Tool
             {
                 if (toggleSwitch2.IsOn)
                 {
-                    playerSizeEdit(-4f);
+                    GameCheat(-4f, Cheats.PlayerSize);
                 }
                 else
                 {
-                    playerSizeEdit(-1f);
+                    GameCheat(-1f, Cheats.PlayerSize);
                 }
             }
         }
@@ -259,11 +247,11 @@ namespace Xbox_Minecraft_Tool
             {
                 if (toggleSwitch4.IsOn)
                 {
-                    setViewEdit(20f);
+                    GameCheat(20f, Cheats.BirdsView);
                 }
                 else
                 {
-                    setViewEdit(1.62f);
+                    GameCheat(1.62f, Cheats.BirdsView);
                 }
             }
         }
@@ -274,11 +262,11 @@ namespace Xbox_Minecraft_Tool
             {
                 if (toggleSwitch3.IsOn)
                 {
-                    fallDamageEdit(100f);
+                    GameCheat(100f, Cheats.FallDamage);
                 }
                 else
                 {
-                    fallDamageEdit(3f);
+                    GameCheat(3f, Cheats.FallDamage);
                 }
             }
         }
@@ -289,11 +277,11 @@ namespace Xbox_Minecraft_Tool
             {
                 if (toggleSwitch8.IsOn)
                 {
-                    dayChangerEdit(8f);
+                    GameCheat(0f, Cheats.DayChanger);
                 }
                 else
                 {
-                    dayChangerEdit(0.25f);
+                    GameCheat(0.25f, Cheats.DayChanger);
                 }
             }
         }
@@ -304,11 +292,11 @@ namespace Xbox_Minecraft_Tool
             {
                 if (toggleSwitch7.IsOn)
                 {
-                    setBlockEdit(100f);
+                    GameCheat(100f, Cheats.Selected_Block);
                 }
                 else
                 {
-                    setBlockEdit(10f);
+                    GameCheat(10f, Cheats.Selected_Block);
                 }
             }
         }
@@ -319,11 +307,11 @@ namespace Xbox_Minecraft_Tool
             {
                 if (toggleSwitch6.IsOn)
                 {
-                    commitSuicideEdit(99f);
+                    GameCheat(99f, Cheats.Commit_Suicide);
                 }
                 else
                 {
-                    commitSuicideEdit(0.8f);
+                    GameCheat(0.8f, Cheats.Commit_Suicide);
                 }
             }
         }
@@ -334,11 +322,11 @@ namespace Xbox_Minecraft_Tool
             {
                 if (toggleSwitch5.IsOn)
                 {
-                    wallhackEdit(20f);
+                    GameCheat(20f, Cheats.Wall_Hack);
                 }
                 else
                 {
-                    wallhackEdit(0.05f);
+                    GameCheat(0.05f, Cheats.Wall_Hack);
                 }
             }
         }
@@ -349,11 +337,11 @@ namespace Xbox_Minecraft_Tool
             {
                 if (toggleSwitch9.IsOn)
                 {
-                    NightVisionEdit(0.9f);
+                    GameCheat(0.9f, Cheats.NightVision);
                 }
                 else
                 {
-                    NightVisionEdit(0.9f);
+                    GameCheat(0.9f, Cheats.NightVision);
                 }
             }
         }
@@ -363,11 +351,21 @@ namespace Xbox_Minecraft_Tool
             JRPC.WriteFloat(console, 0x820190F8, value);
         }
         #endregion
-
-        private void xtraTabPage3_Paint(object sender, PaintEventArgs e)
+        #region Settings Page
+        private void toggleSwitch10_Toggled(object sender, EventArgs e)
+        {
+            if (toggleSwitch10.IsOn == false)
+            {
+                Properties.Settings.Default.themesaver = DefaultTheme;
+                Properties.Settings.Default.switchtheme = false;
+                Properties.Settings.Default.Save();
+            }
+        }
+        private void toggleSwitch14_Toggled(object sender, EventArgs e)
         {
 
         }
+        #endregion
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -376,73 +374,81 @@ namespace Xbox_Minecraft_Tool
             ConnectStatus.ForeColor = randomColor;
         }
 
-        private void HomePanel_Load(object sender, EventArgs e)
-        {
 
-        }
 
-        private void toggleSwitch10_Toggled(object sender, EventArgs e)
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="Type"></param>
+        public static void GameCheat(float value, Cheats Type)//more efficient way pass commands also saves alot of space
         {
-            if(toggleSwitch10.IsOn == false)
+            switch ((int)Type)  //checks the Type Of Mod You wanna Do
             {
-                Properties.Settings.Default.themesaver = DefaultTheme;
-                Properties.Settings.Default.switchtheme = false;
-                Properties.Settings.Default.Save();
+
+                case (int)Cheats.Wall_Hack:
+                    JRPC.WriteFloat(console, 0x82003168, value);
+                    break;
+
+                case (int)Cheats.Commit_Suicide:
+                    JRPC.WriteFloat(console, 0x8201644C, value);
+                    break;
+
+                case (int)Cheats.DayChanger:
+                    JRPC.WriteFloat(console, 0x820074A8, value);//check
+                    break;
+
+                case (int)Cheats.Selected_Block:
+                    JRPC.WriteFloat(console, 0x820071C0, value);
+                    break;
+
+                case (int)Cheats.SuperSpeed:
+                    JRPC.WriteFloat(console, 0x8201594C, value);
+                    break;
+                case (int)Cheats.PlayerSize:
+                    JRPC.WriteFloat(console, 0x820042F4, value);
+                    break;
+                case (int)Cheats.BirdsView:
+                    JRPC.WriteFloat(console, 0x82045B7C, value);
+                    break;
+                case (int)Cheats.FallDamage:
+                    JRPC.WriteFloat(console, 0x82006348, value);//chedk
+                    break;
             }
         }
-        public static IXboxConsole console;
-        private static bool Xnotify;
-        private string Responses;
-
-        public static void commitSuicideEdit(float value)
+        public enum Cheats
         {
-            JRPC.WriteFloat(console, 0x8201644C, value);
+            Commit_Suicide,
+            Wall_Hack,
+            FallDamage,
+            NightVision,
+            DayChanger,
+            Selected_Block,
+            SuperSpeed,
+            PlayerSize,
+            BirdsView,
         }
 
-        public static void dayChangerEdit(float value)
+        public class XNotify
         {
-            JRPC.WriteFloat(console, 0x820568E4, value);//check
+            public static bool XNotifyActive { get; set; }
+            public static void Show(string a)
+            {
+                if (XNotifyActive == true)
+                {
+                    object[] arguments = new object[] { 0x18, 0xff, 2, (a).ToWCHAR(), 1 };
+                    console.CallVoid(JRPC.ThreadType.Title, "xam.xex", 0x290, arguments);
+                }
+                else
+                {
+
+                }
+            }
         }
 
-        public static void fallDamageEdit(float value)
-        {
-            JRPC.WriteFloat(console, 0x820061C8, value);//chedk
-        }
 
-        public static void playerSizeEdit(float value)
-        {
-            JRPC.WriteFloat(console, 0x820042F4, value);
-        }
-
-        public static void setBlockEdit(float value)
-        {
-            JRPC.WriteFloat(console, 0x820071C0, value);
-        }
-
-        public static void setViewEdit(float value)
-        {
-            JRPC.WriteFloat(console, 0x82045B7C, value);
-        }
-
-        public static void stiffAnimationEdit(float value)
-        {
-            JRPC.WriteFloat(console, 0x820dc2c8, value);
-        }
-
-        public static void superSpeedEdit(float value)
-        {
-            JRPC.WriteFloat(console, 0x8201594C, value);
-        }
-
-        public static void wallhackEdit(float value)
-        {
-            JRPC.WriteFloat(console, 0x82003168, value);
-        }
-
-        private void toggleSwitch11_Toggled(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }

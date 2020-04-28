@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05D36A36-DE57-4A26-BD32-72C56B1331D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Xbox_Minecraft_Tool</RootNamespace>
+    <AssemblyName>Xbox Minecraft Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico32512.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\Desktop\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xdevkit">
+      <HintPath>D:\Dlls\xdevkit.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HomePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePanel.Designer.cs">
+      <DependentUpon>HomePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JRPC.cs" />
+    <Compile Include="ModernUIMessageBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModernUIMessageBox.Designer.cs">
+      <DependentUpon>ModernUIMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="HomePanel.resx">
+      <DependentUpon>HomePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModernUIMessageBox.resx">
+      <DependentUpon>ModernUIMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minecraft-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\973489.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Street_Design_3D_-_Minecraft__.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hype-neon-light-amped-co-black-and-white_645.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minecraft-cartoon-png-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\620190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-20190301_171619-1024x282.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minecraft-steve_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24737318.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\324747.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\062af01d66921945ae96d13df0b2e62f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Module_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico32512.ico" />
+    <Content Include="Resources\minecraft-pocket-edition-computer-icons-terraria-minecraft-forge-mines.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

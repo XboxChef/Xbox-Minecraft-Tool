@@ -47,15 +47,9 @@
             this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
@@ -70,6 +64,8 @@
             this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
             this.mods = new DevExpress.XtraTab.XtraTabPage();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.toggleSwitch15 = new DevExpress.XtraEditors.ToggleSwitch();
             this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.toggleSwitch9 = new DevExpress.XtraEditors.ToggleSwitch();
@@ -126,9 +122,7 @@
             this.wce.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.at.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -136,6 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.mods.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch15.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch6.Properties)).BeginInit();
@@ -176,23 +171,23 @@
             // 
             this.fluentDesignFormContainer1.Controls.Add(this.Tabs);
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(250, 40);
-            this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(47, 46);
+            this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(651, 482);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(1004, 587);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // Tabs
             // 
             this.Tabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tabs.Location = new System.Drawing.Point(0, 0);
-            this.Tabs.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Tabs.MaximumSize = new System.Drawing.Size(861, 482);
-            this.Tabs.MinimumSize = new System.Drawing.Size(651, 482);
+            this.Tabs.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.Tabs.MaximumSize = new System.Drawing.Size(1004, 593);
+            this.Tabs.MinimumSize = new System.Drawing.Size(759, 593);
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedTabPage = this.wce;
             this.Tabs.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
-            this.Tabs.Size = new System.Drawing.Size(651, 482);
+            this.Tabs.Size = new System.Drawing.Size(1004, 593);
             this.Tabs.TabIndex = 1;
             this.Tabs.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.wce,
@@ -209,9 +204,9 @@
             this.wce.Controls.Add(this.simpleButton2);
             this.wce.Controls.Add(this.simpleButton1);
             this.wce.Controls.Add(this.pictureBox1);
-            this.wce.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.wce.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.wce.Name = "wce";
-            this.wce.Size = new System.Drawing.Size(649, 455);
+            this.wce.Size = new System.Drawing.Size(1002, 561);
             this.wce.Text = "Welcome";
             // 
             // labelControl29
@@ -221,10 +216,10 @@
             this.labelControl29.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl29.Appearance.Options.UseFont = true;
             this.labelControl29.Appearance.Options.UseForeColor = true;
-            this.labelControl29.Location = new System.Drawing.Point(599, 427);
-            this.labelControl29.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl29.Location = new System.Drawing.Point(699, 526);
+            this.labelControl29.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl29.Name = "labelControl29";
-            this.labelControl29.Size = new System.Drawing.Size(27, 14);
+            this.labelControl29.Size = new System.Drawing.Size(34, 18);
             this.labelControl29.TabIndex = 53;
             this.labelControl29.Text = "v2.0";
             // 
@@ -235,10 +230,10 @@
             this.ConnectStatus.Appearance.ForeColor = System.Drawing.Color.Red;
             this.ConnectStatus.Appearance.Options.UseFont = true;
             this.ConnectStatus.Appearance.Options.UseForeColor = true;
-            this.ConnectStatus.Location = new System.Drawing.Point(360, 431);
-            this.ConnectStatus.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ConnectStatus.Location = new System.Drawing.Point(420, 530);
+            this.ConnectStatus.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.ConnectStatus.Name = "ConnectStatus";
-            this.ConnectStatus.Size = new System.Drawing.Size(51, 14);
+            this.ConnectStatus.Size = new System.Drawing.Size(65, 18);
             this.ConnectStatus.TabIndex = 52;
             this.ConnectStatus.Text = "Disabled";
             // 
@@ -247,10 +242,10 @@
             this.labelControl28.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl28.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl28.Appearance.Options.UseFont = true;
-            this.labelControl28.Location = new System.Drawing.Point(237, 431);
-            this.labelControl28.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl28.Location = new System.Drawing.Point(276, 530);
+            this.labelControl28.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl28.Name = "labelControl28";
-            this.labelControl28.Size = new System.Drawing.Size(119, 14);
+            this.labelControl28.Size = new System.Drawing.Size(140, 18);
             this.labelControl28.TabIndex = 51;
             this.labelControl28.Text = "Connection Status:";
             // 
@@ -261,11 +256,11 @@
             this.simpleButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.BlueViolet;
             this.simpleButton3.Appearance.Options.UseForeColor = true;
-            this.simpleButton3.Location = new System.Drawing.Point(23, 367);
-            this.simpleButton3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.simpleButton3.Location = new System.Drawing.Point(27, 452);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.ShowToolTips = false;
-            this.simpleButton3.Size = new System.Drawing.Size(603, 54);
+            this.simpleButton3.Size = new System.Drawing.Size(703, 66);
             this.simpleButton3.TabIndex = 19;
             this.simpleButton3.Text = "Check For Updates";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
@@ -277,11 +272,11 @@
             this.simpleButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.Red;
             this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.Location = new System.Drawing.Point(23, 307);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.simpleButton2.Location = new System.Drawing.Point(27, 378);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.ShowToolTips = false;
-            this.simpleButton2.Size = new System.Drawing.Size(603, 54);
+            this.simpleButton2.Size = new System.Drawing.Size(703, 66);
             this.simpleButton2.TabIndex = 18;
             this.simpleButton2.Text = "Load Minecraft";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
@@ -293,11 +288,11 @@
             this.simpleButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.Lime;
             this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.Location = new System.Drawing.Point(23, 247);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.simpleButton1.Location = new System.Drawing.Point(27, 304);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.ShowToolTips = false;
-            this.simpleButton1.Size = new System.Drawing.Size(603, 54);
+            this.simpleButton1.Size = new System.Drawing.Size(703, 66);
             this.simpleButton1.TabIndex = 17;
             this.simpleButton1.Text = "Connect";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -308,10 +303,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.ForeColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::Xbox_Minecraft_Tool.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 33);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 41);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(603, 161);
+            this.pictureBox1.Size = new System.Drawing.Size(703, 198);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -322,11 +317,7 @@
             this.at.Controls.Add(this.labelControl24);
             this.at.Controls.Add(this.labelControl23);
             this.at.Controls.Add(this.labelControl11);
-            this.at.Controls.Add(this.labelControl16);
-            this.at.Controls.Add(this.pictureBox8);
             this.at.Controls.Add(this.pictureBox7);
-            this.at.Controls.Add(this.labelControl10);
-            this.at.Controls.Add(this.pictureBox6);
             this.at.Controls.Add(this.labelControl17);
             this.at.Controls.Add(this.panel1);
             this.at.Controls.Add(this.labelControl12);
@@ -340,19 +331,19 @@
             this.at.Controls.Add(this.pictureBox10);
             this.at.Controls.Add(this.labelControl25);
             this.at.Controls.Add(this.labelControl22);
-            this.at.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.at.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.at.Name = "at";
-            this.at.Size = new System.Drawing.Size(649, 455);
+            this.at.Size = new System.Drawing.Size(1002, 561);
             this.at.Text = "About";
             // 
             // labelControl26
             // 
             this.labelControl26.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl26.Appearance.Options.UseForeColor = true;
-            this.labelControl26.Location = new System.Drawing.Point(80, 163);
-            this.labelControl26.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl26.Location = new System.Drawing.Point(93, 201);
+            this.labelControl26.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl26.Name = "labelControl26";
-            this.labelControl26.Size = new System.Drawing.Size(72, 13);
+            this.labelControl26.Size = new System.Drawing.Size(84, 16);
             this.labelControl26.TabIndex = 53;
             this.labelControl26.Text = "Tool Creator...";
             // 
@@ -360,10 +351,10 @@
             // 
             this.labelControl24.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl24.Appearance.Options.UseForeColor = true;
-            this.labelControl24.Location = new System.Drawing.Point(247, 163);
-            this.labelControl24.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl24.Location = new System.Drawing.Point(288, 201);
+            this.labelControl24.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(136, 13);
+            this.labelControl24.Size = new System.Drawing.Size(162, 16);
             this.labelControl24.TabIndex = 51;
             this.labelControl24.Text = "V1.0 Offsets From His Tool..";
             // 
@@ -371,87 +362,41 @@
             // 
             this.labelControl23.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl23.Appearance.Options.UseForeColor = true;
-            this.labelControl23.Location = new System.Drawing.Point(282, 361);
-            this.labelControl23.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl23.Location = new System.Drawing.Point(329, 444);
+            this.labelControl23.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl23.Name = "labelControl23";
-            this.labelControl23.Size = new System.Drawing.Size(66, 13);
+            this.labelControl23.Size = new System.Drawing.Size(79, 16);
             this.labelControl23.TabIndex = 50;
             this.labelControl23.Text = "Simply Dope..";
             // 
             // labelControl11
             // 
-            this.labelControl11.Location = new System.Drawing.Point(257, 346);
-            this.labelControl11.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl11.Location = new System.Drawing.Point(300, 426);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(117, 13);
+            this.labelControl11.Size = new System.Drawing.Size(142, 16);
             this.labelControl11.TabIndex = 44;
             this.labelControl11.Text = "Special Thanks To Kraz..";
-            // 
-            // labelControl16
-            // 
-            this.labelControl16.Location = new System.Drawing.Point(178, 429);
-            this.labelControl16.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(172, 13);
-            this.labelControl16.TabIndex = 42;
-            this.labelControl16.Text = "-Check Out The #1 Kvs Out There..";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.ForeColor = System.Drawing.Color.White;
-            this.pictureBox8.Image = global::Xbox_Minecraft_Tool.Properties.Resources.cropped_20190301_171619_1024x282;
-            this.pictureBox8.Location = new System.Drawing.Point(58, 416);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(116, 31);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 41;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.ForeColor = System.Drawing.Color.White;
             this.pictureBox7.Image = global::Xbox_Minecraft_Tool.Properties.Resources._24737318;
-            this.pictureBox7.Location = new System.Drawing.Point(257, 216);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox7.Location = new System.Drawing.Point(300, 266);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(116, 124);
+            this.pictureBox7.Size = new System.Drawing.Size(135, 153);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 40;
             this.pictureBox7.TabStop = false;
             // 
-            // labelControl10
-            // 
-            this.labelControl10.Location = new System.Drawing.Point(178, 389);
-            this.labelControl10.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(189, 13);
-            this.labelControl10.TabIndex = 39;
-            this.labelControl10.Text = "-Check Out The #1 Stealth Out There..";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.ForeColor = System.Drawing.Color.White;
-            this.pictureBox6.Image = global::Xbox_Minecraft_Tool.Properties.Resources.logo1;
-            this.pictureBox6.Location = new System.Drawing.Point(58, 380);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(116, 31);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 38;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
             // labelControl17
             // 
-            this.labelControl17.Location = new System.Drawing.Point(269, 144);
-            this.labelControl17.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl17.Location = new System.Drawing.Point(314, 177);
+            this.labelControl17.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(93, 13);
+            this.labelControl17.Size = new System.Drawing.Size(112, 16);
             this.labelControl17.TabIndex = 37;
             this.labelControl17.Text = "XeXSolutions#5570";
             // 
@@ -459,66 +404,40 @@
             // 
             this.panel1.BackgroundImage = global::Xbox_Minecraft_Tool.Properties.Resources.minecraft_cartoon_png_3;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Controls.Add(this.labelControl19);
-            this.panel1.Controls.Add(this.labelControl18);
             this.panel1.Controls.Add(this.labelControl14);
             this.panel1.Controls.Add(this.labelControl13);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(428, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panel1.Location = new System.Drawing.Point(744, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(221, 455);
+            this.panel1.Size = new System.Drawing.Size(258, 561);
             this.panel1.TabIndex = 34;
-            // 
-            // labelControl19
-            // 
-            this.labelControl19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelControl19.Appearance.ForeColor = System.Drawing.Color.Lime;
-            this.labelControl19.Appearance.Options.UseForeColor = true;
-            this.labelControl19.Location = new System.Drawing.Point(80, 400);
-            this.labelControl19.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(131, 39);
-            this.labelControl19.TabIndex = 38;
-            this.labelControl19.Text = "Xbonline And XbolineKvs \r\nARE NOT Associated \r\nwith and or Serenity\'s Tool!";
-            // 
-            // labelControl18
-            // 
-            this.labelControl18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelControl18.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl18.Appearance.Options.UseForeColor = true;
-            this.labelControl18.Location = new System.Drawing.Point(25, 400);
-            this.labelControl18.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(51, 13);
-            this.labelControl18.TabIndex = 37;
-            this.labelControl18.Text = "Disclaimer:";
             // 
             // labelControl14
             // 
             this.labelControl14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelControl14.Location = new System.Drawing.Point(17, 358);
-            this.labelControl14.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl14.Location = new System.Drawing.Point(20, 442);
+            this.labelControl14.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(186, 13);
+            this.labelControl14.Size = new System.Drawing.Size(228, 16);
             this.labelControl14.TabIndex = 36;
             this.labelControl14.Text = "Mods From His Version By XeXSolutions";
             // 
             // labelControl13
             // 
-            this.labelControl13.Location = new System.Drawing.Point(24, 14);
-            this.labelControl13.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl13.Location = new System.Drawing.Point(7, 17);
+            this.labelControl13.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(172, 13);
+            this.labelControl13.Size = new System.Drawing.Size(241, 16);
             this.labelControl13.TabIndex = 35;
-            this.labelControl13.Text = "Tool And Updates Made By Serenity";
+            this.labelControl13.Text = "Tool And Updates Made By TeddyHammer";
             // 
             // labelControl12
             // 
-            this.labelControl12.Location = new System.Drawing.Point(31, 346);
-            this.labelControl12.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl12.Location = new System.Drawing.Point(36, 426);
+            this.labelControl12.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(174, 13);
+            this.labelControl12.Size = new System.Drawing.Size(211, 16);
             this.labelControl12.TabIndex = 33;
             this.labelControl12.Text = "Click The Picture To Join Our Discord";
             // 
@@ -527,10 +446,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.ForeColor = System.Drawing.Color.White;
             this.pictureBox4.Image = global::Xbox_Minecraft_Tool.Properties.Resources.hype_neon_light_amped_co_black_and_white_645;
-            this.pictureBox4.Location = new System.Drawing.Point(58, 216);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox4.Location = new System.Drawing.Point(68, 266);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(116, 124);
+            this.pictureBox4.Size = new System.Drawing.Size(135, 153);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 32;
             this.pictureBox4.TabStop = false;
@@ -541,10 +460,10 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.ForeColor = System.Drawing.Color.White;
             this.pictureBox2.Image = global::Xbox_Minecraft_Tool.Properties.Resources._973489;
-            this.pictureBox2.Location = new System.Drawing.Point(58, 14);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(68, 17);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(116, 124);
+            this.pictureBox2.Size = new System.Drawing.Size(135, 153);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
@@ -554,29 +473,29 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.ForeColor = System.Drawing.Color.White;
             this.pictureBox5.Image = global::Xbox_Minecraft_Tool.Properties.Resources.unnamed;
-            this.pictureBox5.Location = new System.Drawing.Point(257, 14);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox5.Location = new System.Drawing.Point(300, 17);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(116, 124);
+            this.pictureBox5.Size = new System.Drawing.Size(135, 153);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 35;
             this.pictureBox5.TabStop = false;
             // 
             // labelControl15
             // 
-            this.labelControl15.Location = new System.Drawing.Point(78, 144);
-            this.labelControl15.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl15.Location = new System.Drawing.Point(75, 177);
+            this.labelControl15.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(76, 13);
+            this.labelControl15.Size = new System.Drawing.Size(121, 16);
             this.labelControl15.TabIndex = 36;
-            this.labelControl15.Text = "-Serenity#5739";
+            this.labelControl15.Text = "TeddyHammer#4539";
             // 
             // labelControl20
             // 
-            this.labelControl20.Location = new System.Drawing.Point(428, 346);
-            this.labelControl20.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl20.Location = new System.Drawing.Point(499, 426);
+            this.labelControl20.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(162, 13);
+            this.labelControl20.Size = new System.Drawing.Size(197, 16);
             this.labelControl20.TabIndex = 48;
             this.labelControl20.Text = "Special Thanks To Xx jAmes t xX..";
             // 
@@ -585,20 +504,20 @@
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.ForeColor = System.Drawing.Color.White;
             this.pictureBox9.Image = global::Xbox_Minecraft_Tool.Properties.Resources._324747;
-            this.pictureBox9.Location = new System.Drawing.Point(449, 216);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox9.Location = new System.Drawing.Point(524, 266);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(116, 124);
+            this.pictureBox9.Size = new System.Drawing.Size(135, 153);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 47;
             this.pictureBox9.TabStop = false;
             // 
             // labelControl21
             // 
-            this.labelControl21.Location = new System.Drawing.Point(481, 144);
-            this.labelControl21.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl21.Location = new System.Drawing.Point(561, 177);
+            this.labelControl21.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(53, 13);
+            this.labelControl21.Size = new System.Drawing.Size(61, 16);
             this.labelControl21.TabIndex = 46;
             this.labelControl21.Text = "Katz#6062";
             // 
@@ -607,10 +526,10 @@
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.ForeColor = System.Drawing.Color.White;
             this.pictureBox10.Image = global::Xbox_Minecraft_Tool.Properties.Resources._062af01d66921945ae96d13df0b2e62f;
-            this.pictureBox10.Location = new System.Drawing.Point(449, 14);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox10.Location = new System.Drawing.Point(524, 17);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(116, 124);
+            this.pictureBox10.Size = new System.Drawing.Size(135, 153);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 45;
             this.pictureBox10.TabStop = false;
@@ -619,10 +538,10 @@
             // 
             this.labelControl25.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl25.Appearance.Options.UseForeColor = true;
-            this.labelControl25.Location = new System.Drawing.Point(474, 163);
-            this.labelControl25.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl25.Location = new System.Drawing.Point(553, 201);
+            this.labelControl25.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(66, 13);
+            this.labelControl25.Size = new System.Drawing.Size(79, 16);
             this.labelControl25.TabIndex = 52;
             this.labelControl25.Text = "Simply Dope..";
             // 
@@ -630,15 +549,17 @@
             // 
             this.labelControl22.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl22.Appearance.Options.UseForeColor = true;
-            this.labelControl22.Location = new System.Drawing.Point(481, 365);
-            this.labelControl22.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl22.Location = new System.Drawing.Point(561, 449);
+            this.labelControl22.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(53, 13);
+            this.labelControl22.Size = new System.Drawing.Size(60, 16);
             this.labelControl22.TabIndex = 49;
             this.labelControl22.Text = "JRPC DLL..";
             // 
             // mods
             // 
+            this.mods.Controls.Add(this.labelControl10);
+            this.mods.Controls.Add(this.toggleSwitch15);
             this.mods.Controls.Add(this.labelControl34);
             this.mods.Controls.Add(this.labelControl9);
             this.mods.Controls.Add(this.toggleSwitch9);
@@ -659,10 +580,32 @@
             this.mods.Controls.Add(this.toggleSwitch2);
             this.mods.Controls.Add(this.toggleSwitch1);
             this.mods.Controls.Add(this.pictureBox3);
-            this.mods.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.mods.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.mods.Name = "mods";
-            this.mods.Size = new System.Drawing.Size(649, 455);
+            this.mods.Size = new System.Drawing.Size(1002, 561);
             this.mods.Text = "Mods";
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelControl10.Location = new System.Drawing.Point(44, 82);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(64, 16);
+            this.labelControl10.TabIndex = 41;
+            this.labelControl10.Text = "SuperJump";
+            // 
+            // toggleSwitch15
+            // 
+            this.toggleSwitch15.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.toggleSwitch15.Location = new System.Drawing.Point(135, 75);
+            this.toggleSwitch15.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.toggleSwitch15.Name = "toggleSwitch15";
+            this.toggleSwitch15.Properties.AllowFocused = false;
+            this.toggleSwitch15.Properties.OffText = "Off";
+            this.toggleSwitch15.Properties.OnText = "On";
+            this.toggleSwitch15.Size = new System.Drawing.Size(83, 28);
+            this.toggleSwitch15.TabIndex = 40;
             // 
             // labelControl34
             // 
@@ -670,10 +613,10 @@
             this.labelControl34.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl34.Appearance.Options.UseForeColor = true;
             this.labelControl34.Enabled = false;
-            this.labelControl34.Location = new System.Drawing.Point(191, 341);
-            this.labelControl34.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl34.Location = new System.Drawing.Point(223, 420);
+            this.labelControl34.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl34.Name = "labelControl34";
-            this.labelControl34.Size = new System.Drawing.Size(32, 13);
+            this.labelControl34.Size = new System.Drawing.Size(38, 16);
             this.labelControl34.TabIndex = 39;
             this.labelControl34.Text = "- New!";
             this.labelControl34.Visible = false;
@@ -682,10 +625,10 @@
             // 
             this.labelControl9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelControl9.Enabled = false;
-            this.labelControl9.Location = new System.Drawing.Point(38, 341);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl9.Location = new System.Drawing.Point(44, 420);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(55, 13);
+            this.labelControl9.Size = new System.Drawing.Size(67, 16);
             this.labelControl9.TabIndex = 38;
             this.labelControl9.Text = "Night Vision";
             this.labelControl9.Visible = false;
@@ -694,13 +637,13 @@
             // 
             this.toggleSwitch9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.toggleSwitch9.Enabled = false;
-            this.toggleSwitch9.Location = new System.Drawing.Point(116, 335);
-            this.toggleSwitch9.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch9.Location = new System.Drawing.Point(135, 412);
+            this.toggleSwitch9.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch9.Name = "toggleSwitch9";
             this.toggleSwitch9.Properties.AllowFocused = false;
             this.toggleSwitch9.Properties.OffText = "Off";
             this.toggleSwitch9.Properties.OnText = "On";
-            this.toggleSwitch9.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch9.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch9.TabIndex = 37;
             this.toggleSwitch9.Visible = false;
             this.toggleSwitch9.Toggled += new System.EventHandler(this.toggleSwitch9_Toggled);
@@ -708,188 +651,184 @@
             // labelControl8
             // 
             this.labelControl8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl8.Location = new System.Drawing.Point(38, 310);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl8.Location = new System.Drawing.Point(44, 382);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(43, 13);
+            this.labelControl8.Size = new System.Drawing.Size(52, 16);
             this.labelControl8.TabIndex = 36;
             this.labelControl8.Text = "WallHack";
             // 
             // labelControl7
             // 
             this.labelControl7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl7.Location = new System.Drawing.Point(38, 281);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl7.Location = new System.Drawing.Point(44, 346);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(69, 13);
+            this.labelControl7.Size = new System.Drawing.Size(86, 16);
             this.labelControl7.TabIndex = 35;
             this.labelControl7.Text = "Commit Sucide";
             // 
             // labelControl6
             // 
             this.labelControl6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl6.Location = new System.Drawing.Point(38, 251);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl6.Location = new System.Drawing.Point(44, 309);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(70, 13);
+            this.labelControl6.Size = new System.Drawing.Size(85, 16);
             this.labelControl6.TabIndex = 34;
             this.labelControl6.Text = "Block Selection";
             // 
             // labelControl5
             // 
             this.labelControl5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl5.Enabled = false;
-            this.labelControl5.Location = new System.Drawing.Point(38, 221);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl5.Location = new System.Drawing.Point(44, 272);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(63, 13);
+            this.labelControl5.Size = new System.Drawing.Size(73, 16);
             this.labelControl5.TabIndex = 33;
             this.labelControl5.Text = "Day Changer";
             // 
             // labelControl4
             // 
             this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl4.Enabled = false;
-            this.labelControl4.Location = new System.Drawing.Point(38, 191);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl4.Location = new System.Drawing.Point(44, 235);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(74, 13);
+            this.labelControl4.Size = new System.Drawing.Size(90, 16);
             this.labelControl4.TabIndex = 32;
             this.labelControl4.Text = "No Fall Damage";
             // 
             // labelControl3
             // 
             this.labelControl3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl3.Location = new System.Drawing.Point(38, 161);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl3.Location = new System.Drawing.Point(44, 198);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(64, 13);
+            this.labelControl3.Size = new System.Drawing.Size(78, 16);
             this.labelControl3.TabIndex = 31;
             this.labelControl3.Text = "Bird Eye View";
             // 
             // labelControl2
             // 
             this.labelControl2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl2.Location = new System.Drawing.Point(38, 131);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl2.Location = new System.Drawing.Point(44, 161);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(52, 13);
+            this.labelControl2.Size = new System.Drawing.Size(63, 16);
             this.labelControl2.TabIndex = 30;
             this.labelControl2.Text = "Player Size";
             // 
             // labelControl1
             // 
             this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl1.Location = new System.Drawing.Point(38, 101);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl1.Location = new System.Drawing.Point(44, 124);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(58, 13);
+            this.labelControl1.Size = new System.Drawing.Size(70, 16);
             this.labelControl1.TabIndex = 29;
             this.labelControl1.Text = "SuperSpeed";
             // 
             // toggleSwitch5
             // 
             this.toggleSwitch5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch5.Location = new System.Drawing.Point(116, 305);
-            this.toggleSwitch5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch5.Location = new System.Drawing.Point(135, 375);
+            this.toggleSwitch5.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch5.Name = "toggleSwitch5";
             this.toggleSwitch5.Properties.AllowFocused = false;
             this.toggleSwitch5.Properties.OffText = "Off";
             this.toggleSwitch5.Properties.OnText = "On";
-            this.toggleSwitch5.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch5.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch5.TabIndex = 28;
             this.toggleSwitch5.Toggled += new System.EventHandler(this.toggleSwitch5_Toggled);
             // 
             // toggleSwitch6
             // 
             this.toggleSwitch6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch6.Location = new System.Drawing.Point(116, 275);
-            this.toggleSwitch6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch6.Location = new System.Drawing.Point(135, 338);
+            this.toggleSwitch6.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch6.Name = "toggleSwitch6";
             this.toggleSwitch6.Properties.AllowFocused = false;
             this.toggleSwitch6.Properties.OffText = "Off";
             this.toggleSwitch6.Properties.OnText = "On";
-            this.toggleSwitch6.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch6.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch6.TabIndex = 27;
             this.toggleSwitch6.Toggled += new System.EventHandler(this.toggleSwitch6_Toggled);
             // 
             // toggleSwitch7
             // 
             this.toggleSwitch7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch7.Location = new System.Drawing.Point(116, 245);
-            this.toggleSwitch7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch7.Location = new System.Drawing.Point(135, 302);
+            this.toggleSwitch7.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch7.Name = "toggleSwitch7";
             this.toggleSwitch7.Properties.AllowFocused = false;
             this.toggleSwitch7.Properties.OffText = "Off";
             this.toggleSwitch7.Properties.OnText = "On";
-            this.toggleSwitch7.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch7.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch7.TabIndex = 26;
             this.toggleSwitch7.Toggled += new System.EventHandler(this.toggleSwitch7_Toggled);
             // 
             // toggleSwitch8
             // 
             this.toggleSwitch8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch8.Enabled = false;
-            this.toggleSwitch8.Location = new System.Drawing.Point(116, 215);
-            this.toggleSwitch8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch8.Location = new System.Drawing.Point(135, 265);
+            this.toggleSwitch8.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch8.Name = "toggleSwitch8";
             this.toggleSwitch8.Properties.AllowFocused = false;
             this.toggleSwitch8.Properties.OffText = "Off";
             this.toggleSwitch8.Properties.OnText = "On";
-            this.toggleSwitch8.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch8.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch8.TabIndex = 25;
             this.toggleSwitch8.Toggled += new System.EventHandler(this.toggleSwitch8_Toggled);
             // 
             // toggleSwitch3
             // 
             this.toggleSwitch3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch3.Enabled = false;
-            this.toggleSwitch3.Location = new System.Drawing.Point(116, 185);
-            this.toggleSwitch3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch3.Location = new System.Drawing.Point(135, 228);
+            this.toggleSwitch3.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch3.Name = "toggleSwitch3";
             this.toggleSwitch3.Properties.AllowFocused = false;
             this.toggleSwitch3.Properties.OffText = "Off";
             this.toggleSwitch3.Properties.OnText = "On";
-            this.toggleSwitch3.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch3.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch3.TabIndex = 24;
             this.toggleSwitch3.Toggled += new System.EventHandler(this.toggleSwitch3_Toggled);
             // 
             // toggleSwitch4
             // 
             this.toggleSwitch4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch4.Location = new System.Drawing.Point(116, 155);
-            this.toggleSwitch4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch4.Location = new System.Drawing.Point(135, 191);
+            this.toggleSwitch4.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch4.Name = "toggleSwitch4";
             this.toggleSwitch4.Properties.AllowFocused = false;
             this.toggleSwitch4.Properties.OffText = "Off";
             this.toggleSwitch4.Properties.OnText = "On";
-            this.toggleSwitch4.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch4.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch4.TabIndex = 23;
             this.toggleSwitch4.Toggled += new System.EventHandler(this.toggleSwitch4_Toggled);
             // 
             // toggleSwitch2
             // 
             this.toggleSwitch2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch2.Location = new System.Drawing.Point(116, 125);
-            this.toggleSwitch2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch2.Location = new System.Drawing.Point(135, 154);
+            this.toggleSwitch2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch2.Name = "toggleSwitch2";
             this.toggleSwitch2.Properties.AllowFocused = false;
             this.toggleSwitch2.Properties.OffText = "Off";
             this.toggleSwitch2.Properties.OnText = "On";
-            this.toggleSwitch2.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch2.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch2.TabIndex = 22;
             this.toggleSwitch2.Toggled += new System.EventHandler(this.toggleSwitch2_Toggled);
             // 
             // toggleSwitch1
             // 
             this.toggleSwitch1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch1.Location = new System.Drawing.Point(116, 95);
-            this.toggleSwitch1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch1.Location = new System.Drawing.Point(135, 117);
+            this.toggleSwitch1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch1.Name = "toggleSwitch1";
             this.toggleSwitch1.Properties.AllowFocused = false;
             this.toggleSwitch1.Properties.OffText = "Off";
             this.toggleSwitch1.Properties.OnText = "On";
-            this.toggleSwitch1.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch1.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch1.TabIndex = 21;
             this.toggleSwitch1.Toggled += new System.EventHandler(this.toggleSwitch1_Toggled);
             // 
@@ -898,10 +837,10 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.ForeColor = System.Drawing.Color.White;
             this.pictureBox3.Image = global::Xbox_Minecraft_Tool.Properties.Resources.Street_Design_3D___Minecraft__;
-            this.pictureBox3.Location = new System.Drawing.Point(378, 86);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(441, 106);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(245, 273);
+            this.pictureBox3.Size = new System.Drawing.Size(286, 336);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
@@ -909,16 +848,18 @@
             // Settings
             // 
             this.Settings.Controls.Add(this.xtraTabControl1);
+            this.Settings.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(649, 455);
+            this.Settings.Size = new System.Drawing.Size(1002, 561);
             this.Settings.Text = "Settings";
             // 
             // xtraTabControl1
             // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(4, 13);
+            this.xtraTabControl1.Location = new System.Drawing.Point(5, 16);
+            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(336, 114);
+            this.xtraTabControl1.Size = new System.Drawing.Size(392, 140);
             this.xtraTabControl1.TabIndex = 35;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -931,84 +872,85 @@
             this.xtraTabPage1.Controls.Add(this.toggleSwitch10);
             this.xtraTabPage1.Controls.Add(this.labelControl31);
             this.xtraTabPage1.Controls.Add(this.toggleSwitch11);
+            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(334, 87);
+            this.xtraTabPage1.Size = new System.Drawing.Size(390, 108);
             this.xtraTabPage1.Text = "StartUp Options";
             // 
             // labelControl30
             // 
             this.labelControl30.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl30.Location = new System.Drawing.Point(39, 21);
-            this.labelControl30.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl30.Location = new System.Drawing.Point(45, 27);
+            this.labelControl30.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(112, 13);
+            this.labelControl30.Size = new System.Drawing.Size(134, 16);
             this.labelControl30.TabIndex = 31;
             this.labelControl30.Text = "Load Theme At StartUp";
             // 
             // toggleSwitch10
             // 
             this.toggleSwitch10.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch10.Location = new System.Drawing.Point(155, 16);
-            this.toggleSwitch10.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch10.Location = new System.Drawing.Point(181, 21);
+            this.toggleSwitch10.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch10.Name = "toggleSwitch10";
             this.toggleSwitch10.Properties.AllowFocused = false;
             this.toggleSwitch10.Properties.OffText = "Off";
             this.toggleSwitch10.Properties.OnText = "On";
-            this.toggleSwitch10.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch10.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch10.TabIndex = 30;
             this.toggleSwitch10.Toggled += new System.EventHandler(this.toggleSwitch10_Toggled);
             // 
             // labelControl31
             // 
             this.labelControl31.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl31.Location = new System.Drawing.Point(85, 51);
-            this.labelControl31.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl31.Location = new System.Drawing.Point(99, 64);
+            this.labelControl31.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl31.Name = "labelControl31";
-            this.labelControl31.Size = new System.Drawing.Size(66, 13);
+            this.labelControl31.Size = new System.Drawing.Size(76, 16);
             this.labelControl31.TabIndex = 33;
             this.labelControl31.Text = "Auto Connect";
             // 
             // toggleSwitch11
             // 
             this.toggleSwitch11.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch11.Location = new System.Drawing.Point(155, 46);
-            this.toggleSwitch11.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch11.Location = new System.Drawing.Point(181, 58);
+            this.toggleSwitch11.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch11.Name = "toggleSwitch11";
             this.toggleSwitch11.Properties.AllowFocused = false;
             this.toggleSwitch11.Properties.OffText = "Off";
             this.toggleSwitch11.Properties.OnText = "On";
-            this.toggleSwitch11.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch11.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch11.TabIndex = 32;
-            this.toggleSwitch11.Toggled += new System.EventHandler(this.toggleSwitch11_Toggled);
             // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.labelControl32);
             this.xtraTabPage2.Controls.Add(this.toggleSwitch12);
+            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(334, 87);
+            this.xtraTabPage2.Size = new System.Drawing.Size(390, 108);
             this.xtraTabPage2.Text = "Mod Options";
             // 
             // labelControl32
             // 
             this.labelControl32.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl32.Location = new System.Drawing.Point(20, 21);
-            this.labelControl32.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl32.Location = new System.Drawing.Point(23, 27);
+            this.labelControl32.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl32.Name = "labelControl32";
-            this.labelControl32.Size = new System.Drawing.Size(131, 13);
+            this.labelControl32.Size = new System.Drawing.Size(161, 16);
             this.labelControl32.TabIndex = 33;
             this.labelControl32.Text = "Remmember Selected Mods";
             // 
             // toggleSwitch12
             // 
             this.toggleSwitch12.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch12.Location = new System.Drawing.Point(155, 16);
-            this.toggleSwitch12.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch12.Location = new System.Drawing.Point(181, 21);
+            this.toggleSwitch12.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch12.Name = "toggleSwitch12";
             this.toggleSwitch12.Properties.AllowFocused = false;
             this.toggleSwitch12.Properties.OffText = "Off";
             this.toggleSwitch12.Properties.OnText = "On";
-            this.toggleSwitch12.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch12.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch12.TabIndex = 32;
             // 
             // xtraTabPage3
@@ -1017,31 +959,32 @@
             this.xtraTabPage3.Controls.Add(this.labelControl27);
             this.xtraTabPage3.Controls.Add(this.labelControl33);
             this.xtraTabPage3.Controls.Add(this.toggleSwitch13);
+            this.xtraTabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(334, 87);
+            this.xtraTabPage3.Size = new System.Drawing.Size(390, 108);
             this.xtraTabPage3.Text = "Update Settings";
-            this.xtraTabPage3.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage3_Paint);
             // 
             // toggleSwitch14
             // 
             this.toggleSwitch14.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch14.Location = new System.Drawing.Point(155, 46);
-            this.toggleSwitch14.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch14.Location = new System.Drawing.Point(181, 58);
+            this.toggleSwitch14.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch14.Name = "toggleSwitch14";
             this.toggleSwitch14.Properties.AllowFocused = false;
             this.toggleSwitch14.Properties.OffText = "Off";
             this.toggleSwitch14.Properties.OnText = "On";
-            this.toggleSwitch14.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch14.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch14.TabIndex = 37;
             this.toggleSwitch14.Visible = false;
+            this.toggleSwitch14.Toggled += new System.EventHandler(this.toggleSwitch14_Toggled);
             // 
             // labelControl27
             // 
             this.labelControl27.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl27.Location = new System.Drawing.Point(60, 51);
-            this.labelControl27.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl27.Location = new System.Drawing.Point(70, 64);
+            this.labelControl27.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl27.Name = "labelControl27";
-            this.labelControl27.Size = new System.Drawing.Size(46, 13);
+            this.labelControl27.Size = new System.Drawing.Size(54, 16);
             this.labelControl27.TabIndex = 36;
             this.labelControl27.Text = "Ester Egg";
             this.labelControl27.Visible = false;
@@ -1049,29 +992,28 @@
             // labelControl33
             // 
             this.labelControl33.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelControl33.Location = new System.Drawing.Point(60, 21);
-            this.labelControl33.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl33.Location = new System.Drawing.Point(70, 27);
+            this.labelControl33.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.labelControl33.Name = "labelControl33";
-            this.labelControl33.Size = new System.Drawing.Size(91, 13);
+            this.labelControl33.Size = new System.Drawing.Size(107, 16);
             this.labelControl33.TabIndex = 35;
             this.labelControl33.Text = "Check For Updates";
             // 
             // toggleSwitch13
             // 
             this.toggleSwitch13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.toggleSwitch13.Location = new System.Drawing.Point(155, 16);
-            this.toggleSwitch13.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.toggleSwitch13.Location = new System.Drawing.Point(181, 21);
+            this.toggleSwitch13.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.toggleSwitch13.Name = "toggleSwitch13";
             this.toggleSwitch13.Properties.AllowFocused = false;
             this.toggleSwitch13.Properties.OffText = "Off";
             this.toggleSwitch13.Properties.OnText = "On";
-            this.toggleSwitch13.Size = new System.Drawing.Size(71, 24);
+            this.toggleSwitch13.Size = new System.Drawing.Size(83, 28);
             this.toggleSwitch13.TabIndex = 34;
             // 
             // slidemenu
             // 
             this.slidemenu.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
-            this.slidemenu.AllowHorizontalResizing = DevExpress.Utils.DefaultBoolean.True;
             this.slidemenu.AllowHtmlText = false;
             this.slidemenu.AllowHtmlTextInToolTip = DevExpress.Utils.DefaultBoolean.True;
             this.slidemenu.AllowItemSelection = true;
@@ -1094,28 +1036,29 @@
             this.accordionControlElement4});
             this.slidemenu.ExpandElementMode = DevExpress.XtraBars.Navigation.ExpandElementMode.Single;
             this.slidemenu.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.slidemenu.Location = new System.Drawing.Point(0, 40);
-            this.slidemenu.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.slidemenu.MaximumSize = new System.Drawing.Size(250, 482);
-            this.slidemenu.MinimumSize = new System.Drawing.Size(40, 482);
+            this.slidemenu.Location = new System.Drawing.Point(0, 46);
+            this.slidemenu.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.slidemenu.MaximumSize = new System.Drawing.Size(292, 593);
+            this.slidemenu.MinimumSize = new System.Drawing.Size(47, 593);
             this.slidemenu.Name = "slidemenu";
             this.slidemenu.OptionsMinimizing.AllowFooterResizing = false;
             this.slidemenu.OptionsMinimizing.AllowMinimizeMode = DevExpress.Utils.DefaultBoolean.True;
             this.slidemenu.OptionsMinimizing.VerticalTextOrientation = DevExpress.XtraBars.Docking.VerticalTextOrientation.TopToBottom;
+            this.slidemenu.ResizeMode = DevExpress.XtraBars.Navigation.AccordionControlResizeMode.OuterResizeZone;
             this.slidemenu.ScaleImages = DevExpress.Utils.DefaultBoolean.False;
             this.slidemenu.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Auto;
             this.slidemenu.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Auto;
             this.slidemenu.ShowGroupExpandButtons = false;
             this.slidemenu.ShowItemExpandButtons = false;
             this.slidemenu.ShowToolTips = false;
-            this.slidemenu.Size = new System.Drawing.Size(250, 482);
+            this.slidemenu.Size = new System.Drawing.Size(47, 593);
             this.slidemenu.TabIndex = 1;
             // 
             // accordionControlElement2
             // 
             this.accordionControlElement2.HeaderIndent = 0;
             this.accordionControlElement2.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
-            this.accordionControlElement2.ImageOptions.Image = global::Xbox_Minecraft_Tool.Properties.Resources._620190;
+            this.accordionControlElement2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image")));
             this.accordionControlElement2.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -1126,7 +1069,7 @@
             // 
             this.accordionControlElement3.HeaderIndent = 0;
             this.accordionControlElement3.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
-            this.accordionControlElement3.ImageOptions.Image = global::Xbox_Minecraft_Tool.Properties.Resources.Module_48px;
+            this.accordionControlElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
             this.accordionControlElement3.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Squeeze;
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -1137,7 +1080,7 @@
             // 
             this.accordionControlElement5.HeaderIndent = 0;
             this.accordionControlElement5.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
-            this.accordionControlElement5.ImageOptions.Image = global::Xbox_Minecraft_Tool.Properties.Resources.Capture;
+            this.accordionControlElement5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement5.ImageOptions.Image")));
             this.accordionControlElement5.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Squeeze;
             this.accordionControlElement5.Name = "accordionControlElement5";
             this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -1148,7 +1091,7 @@
             // 
             this.accordionControlElement4.HeaderIndent = 0;
             this.accordionControlElement4.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
-            this.accordionControlElement4.ImageOptions.Image = global::Xbox_Minecraft_Tool.Properties.Resources.Settings_48px;
+            this.accordionControlElement4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
             this.accordionControlElement4.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Squeeze;
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -1157,19 +1100,17 @@
             // 
             // fluentDesignFormControl1
             // 
-            this.fluentDesignFormControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.barStaticItem1,
             this.skinDropDownButtonItem1});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
             this.fluentDesignFormControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemImageEdit1,
             this.repositoryItemHypertextLabel1});
-            this.fluentDesignFormControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(901, 40);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1051, 46);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem1);
@@ -1231,23 +1172,22 @@
             // 
             // HomePanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 522);
+            this.ClientSize = new System.Drawing.Size(1051, 633);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.slidemenu);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.MaximumSize = new System.Drawing.Size(917, 530);
-            this.MinimumSize = new System.Drawing.Size(917, 530);
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("HomePanel.IconOptions.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.MaximumSize = new System.Drawing.Size(1067, 641);
+            this.MinimumSize = new System.Drawing.Size(1067, 641);
             this.Name = "HomePanel";
             this.NavigationControl = this.slidemenu;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HomePanel_FormClosing);
-            this.Load += new System.EventHandler(this.HomePanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).EndInit();
             this.fluentDesignFormContainer1.ResumeLayout(false);
@@ -1258,9 +1198,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.at.ResumeLayout(false);
             this.at.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1270,6 +1208,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.mods.ResumeLayout(false);
             this.mods.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch15.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch6.Properties)).EndInit();
@@ -1343,13 +1282,7 @@
         private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem1;
         private DevExpress.XtraEditors.Repository.RepositoryItemImageEdit repositoryItemImageEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl17;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
-        private DevExpress.XtraEditors.LabelControl labelControl18;
-        private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.LabelControl labelControl24;
         private DevExpress.XtraEditors.LabelControl labelControl23;
         private DevExpress.XtraEditors.LabelControl labelControl22;
@@ -1389,5 +1322,7 @@
         private DevExpress.XtraEditors.ToggleSwitch toggleSwitch14;
         private DevExpress.XtraEditors.LabelControl labelControl27;
         private DevExpress.XtraEditors.LabelControl labelControl34;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.ToggleSwitch toggleSwitch15;
     }
 }

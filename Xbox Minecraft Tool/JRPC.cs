@@ -1126,8 +1126,16 @@ namespace JRPC_Client
 
         public static void SetMemory(this IXboxConsole console, uint Address, byte[] Data)
         {
-            uint num = 0;
-            console.DebugTarget.SetMemory(Address, (uint)Data.Length, Data, out num);
+            try
+            {
+                uint num = 0;
+                console.DebugTarget.SetMemory(Address, (uint)Data.Length, Data, out num);
+            }
+            catch(COMException ex)
+            {
+                Console.WriteLine(ex);
+            }
+
         }
 
         public static void ShutDownConsole(this IXboxConsole console)
