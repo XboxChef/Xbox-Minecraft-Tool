@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="HomePanel.cs">
       <SubType>Form</SubType>
     </Compile>

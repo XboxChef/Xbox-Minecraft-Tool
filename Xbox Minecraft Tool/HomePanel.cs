@@ -431,22 +431,7 @@ namespace Xbox_Minecraft_Tool
             BirdsView,
         }
 
-        public class XNotify
-        {
-            public static bool XNotifyActive { get; set; }
-            public static void Show(string a)
-            {
-                if (XNotifyActive == true)
-                {
-                    object[] arguments = new object[] { 0x18, 0xff, 2, (a).ToWCHAR(), 1 };
-                    console.CallVoid(JRPC.ThreadType.Title, "xam.xex", 0x290, arguments);
-                }
-                else
-                {
 
-                }
-            }
-        }
 
 
     }
